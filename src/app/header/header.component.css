@@ -3,7 +3,8 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(161, 150, 109);
+  background-color: grey;
+  height: 100px;
 }
 
 /** LOGO **/
@@ -15,6 +16,11 @@ header{
 .header-logo img{
   width: 100px;
   height: 50px;
+}
+
+.header-logo p{
+  padding-left: 10px;
+  margin: 0;
 }
 
 /** USER **/
@@ -29,4 +35,5 @@ header{
 }
 .header-user p{
   padding-right: 10px;
+  margin: 0;
 }
