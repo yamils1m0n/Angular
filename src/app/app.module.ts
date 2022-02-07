@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-//Components
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module'
+
+
+//Components
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
-import { MensajeComponent } from './mensaje/mensaje.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-//Imports
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { RecibidosComponent } from './recibidos/recibidos.component';
+import { EnviadosComponent } from './enviados/enviados.component';
+import { NuevoComponent } from './nuevo/nuevo.component';
 
 
 @NgModule({
@@ -24,8 +23,10 @@ import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/mat
     HeaderComponent,
     LoginComponent,
     MensajesComponent,
-    MensajeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RecibidosComponent,
+    EnviadosComponent,
+    NuevoComponent
   ],
   imports: [
     BrowserModule,
@@ -33,13 +34,9 @@ import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/mat
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule
+    MaterialModule
   ],
-  providers: [
-    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

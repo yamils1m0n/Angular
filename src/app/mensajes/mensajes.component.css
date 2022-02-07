@@ -1,0 +1,25 @@
+
+.conteiner{
+  height: 85vh;
+  background-color: rgb(165, 165, 165);
+  padding-top: 50px;
+}
+
+.conteiner-msg{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 30px 0;
+  border: 1px solid white;
+  box-shadow: rgb(70, 35, 64) 2px 2px 15px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .conteiner-msg {
+    min-width: 55vh;
+  }
+}
+

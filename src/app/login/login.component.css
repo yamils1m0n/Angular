@@ -1,6 +1,6 @@
 
 .conteiner{
-  height: 100vh;
+  height: 85vh;
   background-color: rgb(165, 165, 165);
   padding-top: 150px;
 }
@@ -8,19 +8,22 @@
 form{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 400px;
+  width: 30%;
   align-items: center;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 60px 0;
   border: 1px solid white;
-  box-shadow: rgb(70, 35, 64) 2px 2px 8px;
+  box-shadow: rgb(70, 35, 64) 2px 2px 15px;
 }
 
 form button{
   color:white;
   border: 1px solid white;
   margin-top: 15px;
+}
+
+form button:hover{
+  text-shadow: rgb(70, 35, 64) 2px 2px 3px;
 }
 
 form label{
@@ -34,4 +37,10 @@ form a{
 
 form a:hover{
   font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    min-width: 25vh;
+  }
 }
