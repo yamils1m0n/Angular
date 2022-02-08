@@ -1,0 +1,47 @@
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(117, 117, 117);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* -- Agregar Destinatario -- */
+.agregar-destinatario{
+  display: flex;
+  flex-direction: row;
+}
+.agregar-destinatario button{
+  margin: 8px 0 0 20px;
+}
+
+
+/* -- Mostrar Destinatario -- */
+.mostrar-destinatario{
+  max-height: 160px;
+  overflow: auto;
+}
+
+/* -- Mensaje -- */
+.mensaje{
+  padding-top: 30px;
+}
+.etiqueta-caracteres{
+  font-size: smaller;
+}
+
+/* -- Botones -- */
+form button{
+  color:white;
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+}
+form button:hover{
+  text-shadow: rgb(70, 35, 64) 2px 2px 3px;
+}
+.enviar{
+  margin: 20px auto;
+}

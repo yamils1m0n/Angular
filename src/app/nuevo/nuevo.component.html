@@ -1,1 +1,44 @@
-<p>nuevo works!</p>
+<form action="">
+
+  <!-- Agregar Destinatario -->
+  <div class="agregar-destinatario">
+    <mat-form-field appearance="fill">
+      <mat-label>Seleccione Destinatario</mat-label>
+      <mat-select aria-selected="false">
+        <mat-option value="one">Opcion 1</mat-option>
+        <mat-option value="two">Opcion 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button color="primary">Agregar</button>
+  </div>
+
+  <!-- Mostrar Destinatario -->
+  <label>Destinatarios:</label>
+  <div class="mostrar-destinatario">
+    <mat-list>
+      <mat-list-item>Item 1</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 2</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 4</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 5</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 6</mat-list-item>
+    </mat-list>
+  </div>
+
+
+  <!-- Mensaje -->
+  <mat-form-field appearance="fill" class="mensaje">
+    <mat-label>Escriba aqui su mensaje..</mat-label>
+    <textarea matInput maxlength="144"></textarea>
+  </mat-form-field>
+  <label class="etiqueta-caracteres">- Disponibles 144 caracteres -</label>
+
+  <!-- Botón Enviar -->
+  <button mat-button color="primary" class="enviar">Enviar Mensaje</button>
+
+</form>
