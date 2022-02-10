@@ -5,8 +5,8 @@
     <mat-form-field appearance="fill">
       <mat-label>Seleccione Destinatario</mat-label>
       <mat-select aria-selected="false">
-        <mat-option value="one">Opcion 1</mat-option>
-        <mat-option value="two">Opcion 2</mat-option>
+        <mat-option value="one" class="selection">Opcion 1</mat-option>
+        <mat-option value="two" class="selection">Opcion 2</mat-option>
       </mat-select>
     </mat-form-field>
     <button mat-button color="primary">Agregar</button>
@@ -34,7 +34,7 @@
   <!-- Mensaje -->
   <mat-form-field appearance="fill" class="mensaje">
     <mat-label>Escriba aqui su mensaje..</mat-label>
-    <textarea matInput maxlength="144"></textarea>
+    <textarea matInput maxlength="144" rows="7" style="resize: none;"></textarea>
   </mat-form-field>
   <label class="etiqueta-caracteres">- Disponibles 144 caracteres -</label>
 

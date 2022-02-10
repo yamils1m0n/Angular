@@ -4,7 +4,7 @@ form{
   flex-direction: column;
   width: 100%;
   background-color: rgb(117, 117, 117);
-  padding: 40px 20px;
+  padding: 22px 38px;
   box-sizing: border-box;
 }
 
@@ -12,6 +12,9 @@ form{
 .agregar-destinatario{
   display: flex;
   flex-direction: row;
+}
+.selection{
+  color: rgb(192, 109, 192) !important;
 }
 .agregar-destinatario button{
   margin: 8px 0 0 20px;
@@ -30,6 +33,10 @@ form{
 }
 .etiqueta-caracteres{
   font-size: smaller;
+  padding-bottom: 5px;
+}
+.enviar{
+  margin: 5px auto;
 }
 
 /* -- Botones -- */
@@ -42,6 +49,4 @@ form button{
 form button:hover{
   text-shadow: rgb(70, 35, 64) 2px 2px 3px;
 }
-.enviar{
-  margin: 20px auto;
-}
+

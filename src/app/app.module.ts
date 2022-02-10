@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RecibidosComponent } from './recibidos/recibidos.component';
 import { EnviadosComponent } from './enviados/enviados.component';
 import { NuevoComponent } from './nuevo/nuevo.component';
+import { RegistracionComponent } from './registracion/registracion.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NuevoComponent } from './nuevo/nuevo.component';
     PageNotFoundComponent,
     RecibidosComponent,
     EnviadosComponent,
-    NuevoComponent
+    NuevoComponent,
+    RegistracionComponent
   ],
   imports: [
     BrowserModule,

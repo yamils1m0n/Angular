@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+//Components
 import { LoginComponent } from './login/login.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RegistracionComponent } from './registracion/registracion.component';
 
 const routes: Routes = [
   {
@@ -18,6 +21,11 @@ const routes: Routes = [
     path: 'mensajes',
     component: MensajesComponent
   },
+  {
+    path: 'registracion',
+    component: RegistracionComponent
+  },
+
   {
     path: '**',
     component: PageNotFoundComponent
