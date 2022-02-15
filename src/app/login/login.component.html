@@ -1,22 +1,22 @@
 <div class="conteiner">
 
-  <form action="">
+  <form action="https://www.google.com/" [formGroup]="loginForm" (ngSubmit)="onLogin()" method="post">
 
     <mat-form-field color="primary" appearance="fill">
       <mat-label>Usuario</mat-label>
-      <input matInput autocomplete="off">
+      <input matInput autocomplete="off" formControlName="user" maxlength="10">
     </mat-form-field>
 
     <mat-form-field color="primary" appearance="fill">
       <mat-label>Contraseña</mat-label>
-      <input matInput type="password">
+      <input matInput type="password" formControlName="pass" maxlength="10">
     </mat-form-field>
 
     <button mat-button color="primary">Iniciar Sesión</button>
 
     <label>Eres nuevo en la compañía?</label>
 
-    <a href="/registracion" >Registrarme</a>
+    <a routerLink="/registracion" >Registrarme</a>
 
   </form>
 

@@ -8,6 +8,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule ({
@@ -19,7 +20,8 @@ import { MatListModule } from '@angular/material/list';
     MatTableModule,
     MatSelectModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
   exports: [
     MatInputModule,
@@ -29,7 +31,8 @@ import { MatListModule } from '@angular/material/list';
     MatTableModule,
     MatSelectModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ]
 })
 

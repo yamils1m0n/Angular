@@ -1,24 +1,30 @@
 <div class="conteiner">
 
+  <button mat-button color="primary" class="refresh" (click)="refreshAll()">Refresh</button>
+
   <div class="conteiner-msg">
 
       <mat-tab-group mat-align-tabs="center">
 
         <mat-tab label="Recibidos">
           <div class="conteiner-msg-detail">
-            <app-recibidos></app-recibidos>
+            <app-recibidos [listaVistaInbox]="listaRecibidosVista"></app-recibidos>
           </div>
         </mat-tab>
 
         <mat-tab label="Enviados">
           <div class="conteiner-msg-detail">
-            <app-enviados></app-enviados>
+            <app-enviados [listaVistaSent]="listaEnviadosVista"></app-enviados>
           </div>
         </mat-tab>
 
-        <mat-tab label="Nuevo Mensaje">
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="iconoMas">add_circle_outline</mat-icon>
+            Nuevo
+          </ng-template>
           <div class="conteiner-msg-detail">
-            <app-nuevo></app-nuevo>
+            <app-nuevo [listaUsuariosNuevo]="listaUsuarios"></app-nuevo>
           </div>
         </mat-tab>
 

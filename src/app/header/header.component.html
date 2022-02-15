@@ -7,7 +7,7 @@
 
   <div class="header-user">
     <img src="../../assets/icon/globe-solid.svg" alt="">
-    <p>Not Logged</p>
+    <p>{{ loguedUser$ | async | uppercase }}</p>
   </div>
 
 </header>

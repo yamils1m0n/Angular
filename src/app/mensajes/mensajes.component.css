@@ -1,8 +1,18 @@
 
 .conteiner{
-  height: 85vh;
+  height: 90vh;
   background-color: rgb(165, 165, 165);
-  padding-top: 50px;
+}
+
+.refresh{
+  color:white;
+  border: 1px solid white;
+  background-color: rgb(75, 75, 75);
+  margin-top: 15px;
+}
+
+.refresh:hover{
+  text-shadow: rgb(160, 105, 151) 2px 2px 3px;
 }
 
 .conteiner-msg{
@@ -21,6 +31,16 @@
   height: 64vh;
   overflow: auto;
 }
+
+.iconoMas{
+  padding-right: 3px;
+  filter: invert(45%);  /* invert(100%) - opacity(0.5) */
+}
+
+.iconoMas:hover{
+  filter: invert(0%);
+}
+
 
 @media only screen and (max-width: 800px) {
   .conteiner-msg {

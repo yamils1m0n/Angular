@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './admin.guard';
 
 //Components
 import { LoginComponent } from './login/login.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'mensajes',
-    component: MensajesComponent
+    component: MensajesComponent,
+    canActivate: [AdminGuard]
   },
   {
     path: 'registracion',

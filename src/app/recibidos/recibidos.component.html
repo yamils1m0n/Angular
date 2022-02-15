@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="listaVistaInbox" class="mat-elevation-z8">
 
   <!-- Remitente -->
   <ng-container matColumnDef="remitente">
@@ -15,7 +15,7 @@
   <!-- Fecha -->
   <ng-container matColumnDef="fecha">
     <th mat-header-cell *matHeaderCellDef> Fecha </th>
-    <td mat-cell *matCellDef="let element"> {{element.fecha}} </td>
+    <td mat-cell *matCellDef="let element"> 14/02/2022 </td>
   </ng-container>
 
   <!-- Mensaje -->
