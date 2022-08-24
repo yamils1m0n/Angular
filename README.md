@@ -1,4 +1,4 @@
-# Integrador Front Consideraciones
+# Consideraciones
 
 Verificar con Consola abierta: aún se muestran los mensajes de aviso allí.
 Faltan configurar los mensajes modales que aparecen para dar avisos.
